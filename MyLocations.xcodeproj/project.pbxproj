@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		691661D1C93443BF7CF4549A /* Pods_MyLocations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76682AB6DF9D79356547D9E7 /* Pods_MyLocations.framework */; };
+		EC0A6495229927BB0014797D /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0A6494229927BB0014797D /* LocationDetailViewController.swift */; };
 		EC10B57F22890C9C00A68877 /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10B57E22890C9C00A68877 /* CurrentLocationView.swift */; };
+		EC42C84B229A74AD00A667DA /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42C84A229A74AD00A667DA /* CategoryPickerViewController.swift */; };
 		ECE8871C2288074600476FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE8871B2288074600476FC4 /* AppDelegate.swift */; };
 		ECE8871E2288074600476FC4 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE8871D2288074600476FC4 /* CurrentLocationViewController.swift */; };
 		ECE887202288074600476FC4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE8871F2288074600476FC4 /* SecondViewController.swift */; };
@@ -21,7 +23,9 @@
 		1608DB4A1616CF1CC3A628FF /* Pods-MyLocations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLocations.release.xcconfig"; path = "Target Support Files/Pods-MyLocations/Pods-MyLocations.release.xcconfig"; sourceTree = "<group>"; };
 		76682AB6DF9D79356547D9E7 /* Pods_MyLocations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLocations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		912BC1E0249B9459624B66E3 /* Pods-MyLocations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLocations.debug.xcconfig"; path = "Target Support Files/Pods-MyLocations/Pods-MyLocations.debug.xcconfig"; sourceTree = "<group>"; };
+		EC0A6494229927BB0014797D /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		EC10B57E22890C9C00A68877 /* CurrentLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
+		EC42C84A229A74AD00A667DA /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		ECE887182288074600476FC4 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE8871B2288074600476FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECE8871D2288074600476FC4 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 			children = (
 				ECE8871D2288074600476FC4 /* CurrentLocationViewController.swift */,
 				ECE8871F2288074600476FC4 /* SecondViewController.swift */,
+				EC0A6494229927BB0014797D /* LocationDetailViewController.swift */,
+				EC42C84A229A74AD00A667DA /* CategoryPickerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,10 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC42C84B229A74AD00A667DA /* CategoryPickerViewController.swift in Sources */,
 				ECE887202288074600476FC4 /* SecondViewController.swift in Sources */,
 				ECE8871C2288074600476FC4 /* AppDelegate.swift in Sources */,
 				ECE8871E2288074600476FC4 /* CurrentLocationViewController.swift in Sources */,
 				EC10B57F22890C9C00A68877 /* CurrentLocationView.swift in Sources */,
+				EC0A6495229927BB0014797D /* LocationDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

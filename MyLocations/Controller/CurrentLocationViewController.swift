@@ -56,9 +56,22 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
 		updateLabels()
 	}
 
+	//MARK:- life cycles
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		updateLabels()
+	}
+	
+	//hide the navagation bar when enter current location screen
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(true)
+		navigationController?.isNavigationBarHidden = true
+	}
+	
+	//show the navigation controller when exiting current location screen
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(true)
+		navigationController?.isNavigationBarHidden = false
 	}
 	
 	func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -265,6 +278,15 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
 			stoplocationManager()
 			lastLocationError = NSError(domain: "MyLocationsErrorDomain", code: 1, userInfo: nil)
 			updateLabels()
+		}
+	}
+	
+	//Prepare for segue
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "TagLocation" {
+			let controller = segue.destination as! LocationDetailViewController
+			controller.coordinate = location!.coordinate
+			controller.placemark = placeMark
 		}
 	}
 }
